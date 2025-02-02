@@ -1,3 +1,7 @@
+usercode
+3.3
+file:///home/zyuser/flutter-calc/
+file:///home/zyuser/flutter-calc/lib/
 sky_engine
 3.2
 file:///nix/store/v3pwqhl88vsk7wrmr9whbsi9jhqnqfm5-flutter-wrapped-3.19.0-sdk-links/bin/cache/pkg/sky_engine/
@@ -10,10 +14,6 @@ flutter_test
 3.2
 file:///nix/store/v3pwqhl88vsk7wrmr9whbsi9jhqnqfm5-flutter-wrapped-3.19.0-sdk-links/packages/flutter_test/
 file:///nix/store/v3pwqhl88vsk7wrmr9whbsi9jhqnqfm5-flutter-wrapped-3.19.0-sdk-links/packages/flutter_test/lib/
-usercode
-3.3
-file:///usercode/
-file:///usercode/lib/
 async
 2.18
 file:///userdata/dart/pub-cache/hosted/pub.dev/async-2.11.0/
