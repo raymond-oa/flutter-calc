@@ -45,6 +45,17 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
         } catch (e) {
           _result = " Error";
         }
+      } else if (value == "x²") {
+        try {
+          double number = double.tryParse(_expression) ?? 0;
+          _expression = (number * number).toString();
+          _result = "";
+        } catch (e) {
+          _result = " Error";
+        }
+      } else if (value == "%") {
+        _expression += "%";
+        _result = "";
       } else {
         _expression += value;
         _result = "";
@@ -82,13 +93,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 crossAxisSpacing: 4,
                 mainAxisSpacing: 4,
               ),
-              itemCount: 16,
+              itemCount: 18, // Updated to fit new buttons
               itemBuilder: (context, index) {
                 final buttons = [
-                  "7","8","9","/",
-                  "4","5","6","*",
-                  "1","2","3","-"
-                  "C","0","=","+"
+                  "7", "8", "9", "/",
+                  "4", "5", "6", "*",
+                  "1", "2", "3", "-",
+                  "C", "0", "=", "+",
+                  "x²", "%" // New buttons
                 ];
                 final value = buttons[index];
                 return ElevatedButton(
